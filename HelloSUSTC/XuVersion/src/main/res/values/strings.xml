@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HelloSUSTC</string>
+    <string name="log">登录</string>
+    <string name="infowindow_navigation">路线</string>
+    <string name="infowindow_call">查看</string>
+
+</resources>

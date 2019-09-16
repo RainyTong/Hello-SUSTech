@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/ui_radius_bg"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:id="@+id/register_username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paw_code" />
+
+            <EditText
+                android:id="@+id/register_input_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:hint="username"
+                android:singleLine="true"
+                android:padding="5dip"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:id="@+id/register_email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paw_left" />
+
+            <EditText
+                android:id="@+id/register_input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:padding="5dip"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:id="@+id/register_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paw_left" />
+
+            <EditText
+                android:id="@+id/register_input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:padding="5dip"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:id="@+id/register_password_check_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paw_left" />
+
+            <EditText
+                android:id="@+id/register_input_password_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:hint="confirm-password"
+                android:inputType="textPassword"
+                android:padding="5dip"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:id="@+id/register_checkcode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paw_left" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:weightSum="5"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/register_input_checkcode"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:hint="check code"
+                    android:inputType="number"
+                    android:padding="5dip"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="#666666"/>
+
+                <TextView
+                    android:id="@+id/send_checkcode_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textColor="@color/color_yellow_green"
+                    android:text="Get Checkcode"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

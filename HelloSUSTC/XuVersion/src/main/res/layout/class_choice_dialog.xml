@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:weightSum="8"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="3"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/class_left" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/class_week"
+                    android:textColor="@color/black_text"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:text="周一"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:id="@+id/class_dajie"
+                    android:textColor="@color/black_text"
+                    android:text="第二大节"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/classcancel"
+                android:text="取消"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/boderwhite"
+                android:textColor="@color/colorTopBar"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:id="@+id/classclear"
+                android:background="@drawable/boderwhite"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/colorTopBar"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="更新"
+                android:id="@+id/classupdate"
+                android:background="@drawable/boderwhite"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/colorTopBar"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_calendar_bg"
+>
+    <include
+        android:id="@+id/calendar_tle"
+        layout="@layout/ui_back_title_layout" />
+
+
+
+        <LinearLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bodereditext"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            android:layout_margin="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/calendar_tle">
+        >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_search"
+                android:layout_weight="1"
+                android:padding="7dp"
+            />
+            <EditText
+                android:id="@+id/class_go"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="6.2"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="请输入课程名字"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="15sp"
+            />
+            <ImageView
+                android:id="@+id/class_search_cancel_tv"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:padding="8dp"
+                app:srcCompat="@drawable/cancel"
+            />
+        </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/class_search_records"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ProgressBar
+        android:id="@+id/class_add_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

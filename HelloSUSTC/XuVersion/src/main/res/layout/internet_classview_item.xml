@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/classbackground"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/plus"/>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="5"
+           android:orientation="vertical"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           >
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/update_classname"
+               android:text="课程: "
+               android:textColor="@color/black_text"
+               android:textSize="13sp"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="授课教师: "
+               android:id="@+id/update_teacher"
+               android:textColor="@color/black_text"
+               android:textSize="13sp"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="教室: "
+               android:id="@+id/update_classroom"
+               android:textColor="@color/black_text"
+               android:textSize="13sp"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="周次: "
+               android:id="@+id/update_weektimes"
+               android:textColor="@color/black_text"
+               android:textSize="13sp"
+               />
+       </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
